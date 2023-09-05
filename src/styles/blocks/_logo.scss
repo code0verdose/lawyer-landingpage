@@ -1,0 +1,18 @@
+.logo {
+  &__name {
+    color: $accent-color;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+
+  &__sub {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 150%;
+    text-transform: lowercase;
+    margin-top: -10px;
+  }
+}

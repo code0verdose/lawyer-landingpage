@@ -1,7 +1,10 @@
 .header {
+  position: relative;
+
   &__top {
     padding: 16px 0;
     background: #010101;
+    max-height: $header-top-height;
   }
 
   &__wrapper {
@@ -22,7 +25,6 @@
       font-weight: 600;
       line-height: 120%;
       margin-left: 8px;
-
     }
   }
   &__link {
@@ -33,7 +35,7 @@
     }
 
     &:hover > .header__contacts-text {
-      color: darken(#fff, 20)
+      color: darken(#fff, 20);
     }
   }
 
@@ -48,4 +50,16 @@
       color: $accent-hover;
     }
   }
+
+  &__bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: $header-top-height;
+    background: rgba(1, 1, 1, 0.76);
+    padding: 22px 0 28px;
+
+  }
+
+  
 }

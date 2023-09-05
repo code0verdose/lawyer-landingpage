@@ -123,9 +123,13 @@ body {
   box-sizing: content-box;
 }
 
+.header {
+  position: relative;
+}
 .header__top {
   padding: 16px 0;
   background: #010101;
+  max-height: 52px;
 }
 .header__wrapper {
   display: flex;
@@ -171,4 +175,48 @@ body {
 }
 .header__callme:hover {
   color: #115ac8;
+}
+.header__bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 52px;
+  background: rgba(1, 1, 1, 0.76);
+  padding: 22px 0 28px;
+}
+
+.logo__name {
+  color: #4f8ff0;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.logo__sub {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 150%;
+  text-transform: lowercase;
+  margin-top: -10px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav__link {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+  transition: 0.2s;
+}
+.nav__link:not(:first-child) {
+  margin-left: 32px;
+}
+.nav__link:hover {
+  color: #4f8ff0;
+  text-decoration-line: underline;
 }/*# sourceMappingURL=style.css.map */
