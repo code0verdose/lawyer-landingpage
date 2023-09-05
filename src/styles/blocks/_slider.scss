@@ -1,0 +1,38 @@
+.slider {
+  @include flex-row-sb-ai;
+
+  &__pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 28px;
+  }
+
+  &__page {
+    width: 4px;
+    height: 24px;
+    background: #e6e6e6;
+    display: block;
+
+    &_active {
+      height: 40px;
+      background: $accent-color;
+    }
+  }
+
+  &__nav {
+    width: 70px;
+    @include flex-row-sb-ai;
+
+  }
+
+  &__btn {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}

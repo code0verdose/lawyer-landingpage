@@ -13,6 +13,7 @@
     />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="header__top">
         <div class="container header__wrapper">
@@ -67,7 +68,43 @@
         </div>
       </div>
     </header>
-
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero__container">
+          <h1 class="hero__title">
+            <span class="hero__title_top">Оказываем весь комплекс</span>
+            <span class="hero__title_bottom">Юридических услуг</span>
+          </h1>
+          <p class="hero__subtitle">
+            Давно выяснено, что при оценке дизайна и композиции читаемый текст
+            мешает сосредоточиться. Lorem Ipsum используют потому, что тот
+            обеспечивает более или менее стандартное заполнение.
+          </p>
+          <a class="hero__link" href="#">Наши услуги</a>
+          <div class="hero__slider slider">
+            <div class="slider__pagination">
+              <span class="slider__page slider__page_active"></span>
+              <span class="slider__page"></span>
+              <span class="slider__page"></span>
+            </div>
+            <div class="slider__nav">
+              <button class="slider__btn slider__btn_left">
+                <svg class="slider__icon slider__icon_left">
+                  <use xlink:href="#arrowright"></use>
+                </svg>
+              </button>
+              <span class="slider__separator"></span>
+              <button class="slider__btn slider__btn_right">
+                <svg class="slider__icon slider__icon_right">
+                  <use xlink:href="#arrowright"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- SVG SPRITES -->
     <svg width="0" height="0" class="hidden">
       <symbol

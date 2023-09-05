@@ -1,0 +1,70 @@
+.hero {
+  height: 820px;
+  padding: 260px 0 24px;
+
+  background: #b9b9b9 url("../images/bg/hero_bg.webp") no-repeat center/cover;
+
+  &__container {
+    height: 820px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    &_top {
+      color: #fff;
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 150%;
+      text-transform: uppercase;
+      display: block;
+      text-align: center;
+    }
+    &_bottom {
+      color: $accent-color;
+      font-size: 56px;
+      font-weight: 600;
+      line-height: 150%;
+      text-transform: uppercase;
+      margin-top: 8px;
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    margin-top: 8px;
+    max-width: 1090px;
+    margin: 0 auto;
+  }
+
+  &__link {
+    border: 2px solid $accent-color;
+    background: $accent-color;
+    color: var(--white-color-100, #fff);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 120%;
+    text-transform: uppercase;
+    padding: 16px 22px;
+    display: block;
+    margin: 48px auto 0;
+    max-width: 158px;
+
+    transition: 0.2s;
+
+    &:hover {
+      background: darken($accent-color, 20);
+    }
+  }
+
+  &__slider {
+    margin-top: auto;
+  }
+}
