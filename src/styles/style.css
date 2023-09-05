@@ -161,6 +161,17 @@ body {
   max-width: 920px;
 }
 
+@media (max-width: 1098px) {
+  .subtitle {
+    max-width: 696px;
+  }
+}
+@media (max-width: 568px) {
+  .subtitle {
+    font-size: 14px;
+    max-width: 100%;
+  }
+}
 .header {
   position: relative;
 }
@@ -508,6 +519,28 @@ body {
   max-width: 138px;
 }
 
+@media (max-width: 1098px) {
+  .services {
+    padding: 60px 0;
+  }
+  .services__item-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+@media (max-width: 568px) {
+  .services {
+    padding: 40px 0;
+  }
+  .services__item {
+    padding: 24px 16px;
+    min-width: 250px;
+  }
+  .services__item-wrapper {
+    display: flex;
+    overflow: scroll;
+  }
+}
 .title {
   color: #222;
   font-size: 28px;
@@ -516,11 +549,22 @@ body {
   text-transform: uppercase;
 }
 
+@media (max-width: 1098px) {
+  .title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 568px) {
+  .title {
+    font-size: 20px;
+  }
+}
 .item {
   padding: 50px 32px;
   background: #fff;
   color: #222;
   position: relative;
+  cursor: pointer;
   transition: 0.2s;
 }
 .item__icon {
@@ -544,6 +588,10 @@ body {
   font-weight: 400;
   line-height: 120%;
   margin-top: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .item:hover {
   background: #4f8ff0;
@@ -607,19 +655,30 @@ body {
 .lawyers__subtitle {
   margin: 24px auto 0;
 }
+.lawyers__profile:not(:first-child) {
+  margin-left: 24px;
+}
 .lawyers__profile-wrapper {
   margin-top: 48px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  overflow: scroll;
 }
 
+@media (max-width: 1098px) {
+  .lawyers {
+    padding: 60px 0;
+  }
+}
 .profile {
   max-width: 312px;
+  min-width: 300px;
   background: #fff;
   box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
   position: relative;
+  cursor: pointer;
 }
 .profile__img {
   width: 100%;
@@ -685,6 +744,7 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  text-align: center;
 }
 .profile:hover .profile__hidden {
   opacity: 1;
@@ -692,4 +752,24 @@ body {
 
 .no-lower {
   text-transform: none;
+}
+
+@media (max-width: 568px) {
+  .profile {
+    max-width: 250px;
+    min-width: 250px;
+  }
+  .profile__img {
+    height: 235px;
+    object-position: top;
+  }
+  .profile__hidden {
+    padding: 30px;
+  }
+  .profile__exp {
+    font-size: 14px;
+  }
+  .profile__description {
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -29,3 +29,32 @@
     max-width: 138px;
   }
 }
+
+@media (max-width: 1098px) {
+  .services {
+    padding: 60px 0;
+
+    &__item {
+
+      &-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 568px) {
+  .services {
+    padding: 40px 0;
+
+    &__item {
+      padding: 24px 16px;
+      min-width: 250px;
+      &-wrapper {
+        display: flex;
+        overflow: scroll;
+      }
+    }
+  }
+}

@@ -1,8 +1,10 @@
 .profile {
   max-width: 312px;
+  min-width: 300px;
   background: #fff;
   box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
   position: relative;
+  cursor: pointer;
 
   &__img {
     width: 100%;
@@ -74,6 +76,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    text-align: center;
   }
 
 
@@ -84,4 +87,29 @@
 
 .no-lower {
   text-transform: none;
+}
+
+
+@media (max-width: 568px) {
+  .profile {
+    max-width: 250px;
+    min-width: 250px;
+
+    &__img {
+      height: 235px;
+      object-position: top;
+    }
+
+    &__hidden {
+      padding: 30px;
+    }
+
+    &__exp {
+      font-size: 14px;
+    }
+
+    &__description {
+      margin-top: 20px;
+    }
+  }
 }

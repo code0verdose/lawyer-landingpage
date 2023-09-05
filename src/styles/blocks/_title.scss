@@ -5,3 +5,16 @@
   line-height: 150%;
   text-transform: uppercase;
 }
+
+
+@media (max-width: 1098px) {
+  .title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 568px) {
+  .title {
+    font-size: 20px;
+  }
+}

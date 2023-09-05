@@ -16,10 +16,19 @@
   }
 
   &__profile {
-  
+    &:not(:first-child) {
+      margin-left: 24px;
+    }
     &-wrapper {
       margin-top: 48px;
       @include flex-row-sb-ai;
+      overflow: scroll;
     }
+  }
+}
+
+@media (max-width: 1098px) {
+  .lawyers {
+    padding: 60px 0;
   }
 }
