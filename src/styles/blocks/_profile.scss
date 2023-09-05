@@ -1,0 +1,87 @@
+.profile {
+  max-width: 312px;
+  background: #fff;
+  box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
+  position: relative;
+
+  &__img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: center;
+    background: lightgrey;
+    display: block;
+  }
+
+  &__info {
+    padding: 24px 16px;
+    overflow: hidden;
+    max-height: 94px;
+  }
+
+  &__name {
+    color: $main-color;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 120%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__post {
+    color: $main-color;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 120%;
+    text-transform: lowercase;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+  }
+
+  &__hidden {
+    position: absolute;
+    z-index: 10;
+    inset: 0 0 0 0;
+    background: #000;
+    background: #fff;
+    padding: 83px 20px 84px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.2s;
+  }
+
+  &__description {
+    margin-top: 40px;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 120%;
+  }
+
+  &__exp {
+    color: $main-color;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+
+  &:hover .profile__hidden {
+    opacity: 1;
+  }
+}
+
+.no-lower {
+  text-transform: none;
+}

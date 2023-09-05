@@ -3,6 +3,8 @@
 @import "./config/config";
 @import "./config/mixins";
 @import "./config/layout";
+@import "./blocks/button";
+@import "./blocks/subtitle";
 @import "./sections/header";
 @import "./blocks/logo";
 @import "./blocks/link";
@@ -12,5 +14,7 @@
 @import "./sections/hero";
 @import "./sections/services";
 @import "./blocks/title";
-@import './blocks/item';
-@import './blocks/corner';
+@import "./blocks/item";
+@import "./blocks/corner";
+@import './sections/lawyers';
+@import './blocks/profile'

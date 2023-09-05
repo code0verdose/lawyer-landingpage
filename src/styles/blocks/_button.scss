@@ -1,0 +1,31 @@
+.button {
+  border: 2px solid $accent-color;
+  background: $accent-color;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 120%;
+  text-transform: uppercase;
+  padding: 16px 22px;
+  display: block;
+
+  transition: 0.2s;
+
+  &:hover {
+    background: #fff;
+    color: $accent-color;
+  }
+
+  &:active {
+    border: 2px solid #e6e6e6;
+    background: #fff;
+    color: $main-color;
+  }
+
+  &:disabled {
+    border: 2px solid #e6e6e6;
+    background: #e6e6e6;
+    color: $main-color;
+  }
+}
