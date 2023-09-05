@@ -1,14 +1,11 @@
 .hero {
-  height: 820px;
+  min-height: 820px;
   padding: 260px 0 24px;
 
-  background: #b9b9b9 url("../images/bg/hero_bg.webp") no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
 
-  &__container {
-    height: 820px;
-    display: flex;
-    flex-direction: column;
-  }
+  background: #b9b9b9 url("../images/bg/hero_bg.webp") no-repeat center/cover;
 
   &__title {
     &_top {
@@ -66,5 +63,6 @@
 
   &__slider {
     margin-top: auto;
+    flex-grow: 1;
   }
 }

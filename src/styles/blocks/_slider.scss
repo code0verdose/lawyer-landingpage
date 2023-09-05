@@ -1,6 +1,13 @@
 .slider {
   @include flex-row-sb-ai;
 
+  &__container {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+  }
+
   &__pagination {
     display: flex;
     justify-content: space-between;
@@ -23,16 +30,32 @@
   &__nav {
     width: 70px;
     @include flex-row-sb-ai;
-
   }
 
   &__btn {
     width: 20px;
     height: 20px;
+
+    transition: 0.2s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   &__icon {
     width: 20px;
     height: 20px;
+
+    &_left {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__separator {
+    width: 32px;
+    height: 2px;
+    background: #e6e6e6;
+    transform: rotate(110deg);
   }
 }
