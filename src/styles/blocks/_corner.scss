@@ -1,0 +1,31 @@
+.corner {
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  position: absolute;
+
+  &_tl {
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    top: 20px;
+    left: 20px;
+  }
+  &_tr {
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    top: 20px;
+    right: 20px;
+  }
+  &_br {
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    bottom: 20px;
+    right: 20px;
+  }
+  &_bl {
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    bottom: 20px;
+    left: 20px;
+  }
+}

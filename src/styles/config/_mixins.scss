@@ -4,3 +4,12 @@
   align-items: center;
   justify-content: space-between;
 }
+
+@mixin title-pseudo {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: $accent-color;
+  margin-top: 10px;
+  display: block;
+}
