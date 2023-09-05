@@ -22,6 +22,7 @@
       font-weight: 600;
       line-height: 120%;
       margin-left: 8px;
+
     }
   }
   &__link {
@@ -29,6 +30,22 @@
 
     &:last-child {
       margin-left: 28px;
+    }
+
+    &:hover > .header__contacts-text {
+      color: darken(#fff, 20)
+    }
+  }
+
+  &__callme {
+    color: $accent-color;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+    transition: 0.2s;
+
+    &:hover {
+      color: $accent-hover;
     }
   }
 }

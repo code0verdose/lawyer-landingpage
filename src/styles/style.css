@@ -158,4 +158,17 @@ body {
 }
 .header__link:last-child {
   margin-left: 28px;
+}
+.header__link:hover > .header__contacts-text {
+  color: #cccccc;
+}
+.header__callme {
+  color: #4f8ff0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 150%;
+  transition: 0.2s;
+}
+.header__callme:hover {
+  color: #115ac8;
 }/*# sourceMappingURL=style.css.map */
