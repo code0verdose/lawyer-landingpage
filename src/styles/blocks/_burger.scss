@@ -1,0 +1,69 @@
+.burger {
+  display: none;
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+
+    &_close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+    }
+  }
+
+  &__check {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    z-index: 100;
+
+    &:checked ~ .burger__list {
+      transform: none;
+    }
+    &:checked {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: $main-color;
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 38px 26px;
+
+    transition: 0.4s;
+    transform: translateX(100%);
+  }
+
+  &__link {
+    font-size: 16px;
+    padding: 12px 0;
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 1098px) {
+  .burger {
+    display: block;
+  }
+}
+
+@media (max-width: 568px) {
+  .burger {
+    &__list {
+      width: 100vw;
+    }
+  }
+}

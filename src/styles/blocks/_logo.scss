@@ -16,3 +16,14 @@
     margin-top: -10px;
   }
 }
+
+@media (max-width: 1098px) {
+  .logo {
+    &__name {
+      font-size: 22px;
+    }
+    &__sub {
+      font-size: 16px;
+    }
+  }
+}

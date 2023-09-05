@@ -1,0 +1,11 @@
+.link {
+  color: #fff;
+  font-weight: 700;
+  line-height: 120%;
+  transition: 0.2s;
+
+  &:hover {
+    color: $accent-color;
+    text-decoration-line: underline;
+  }
+}

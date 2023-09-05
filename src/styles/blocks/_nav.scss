@@ -3,20 +3,17 @@
   align-items: center;
 
   &__link {
-    color: #fff;
-    text-align: center;
     font-size: 18px;
-    font-weight: 700;
-    line-height: 120%;
-    transition: .2s;
+    text-align: center;
 
     &:not(:first-child) {
       margin-left: 32px;
     }
+  }
+}
 
-    &:hover {
-      color: $accent-color;
-      text-decoration-line: underline;
-    }
+@media (max-width: 1098px) {
+  .nav {
+    display: none;
   }
 }

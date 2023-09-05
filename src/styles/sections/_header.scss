@@ -60,6 +60,17 @@
     padding: 22px 0 28px;
 
   }
+}
 
-  
+
+@media (max-width: 568px) {
+  .header {
+
+    &__link {
+
+      &:last-child {
+        display: none;
+      }
+    }
+  }
 }
