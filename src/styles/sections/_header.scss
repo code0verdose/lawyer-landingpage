@@ -1,0 +1,34 @@
+.header {
+  &__top {
+    padding: 16px 0;
+    background: #010101;
+  }
+
+  &__wrapper {
+    @include flex-row-sb-ai;
+  }
+
+  &__contacts {
+    @include flex-row-sb-ai;
+
+    &-icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    &-text {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 120%;
+      margin-left: 8px;
+    }
+  }
+  &__link {
+    @include flex-row-sb-ai;
+
+    &:last-child {
+      margin-left: 28px;
+    }
+  }
+}
